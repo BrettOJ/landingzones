@@ -71,7 +71,7 @@ solution_plan_map = {
 
     }
 }
-log_analytics_workspace = ""
+
 
  diagnostics_map = {
       diags_sa      = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/operations-rg/providers/Microsoft.Storage/storageAccounts/opslogs"

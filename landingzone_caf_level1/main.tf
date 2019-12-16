@@ -20,5 +20,15 @@ data "terraform_remote_state" "level0_launchpad" {
 }
 
 locals {
-    prefix          = data.terraform_remote_state.level0_launchpad.outputs.prefix
+    prefix                  = data.terraform_remote_state.level0_launchpad.outputs.prefix
+    
+}
+
+data "terraform_remote_state" "landingzone_caf_foundations" {
+
+    backend = "azurerm"
+    config = {
+    log_analytics_workspace.id  = var.log_analytics_workspace
+
+  }
 }
