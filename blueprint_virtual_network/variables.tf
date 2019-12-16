@@ -6,10 +6,6 @@ variable "prefix" {
   description = "(Optional) Prefix to uniquely identify the deployment"  
 }
 
-variable "virtual_network_rg" {
-  description = "(Required) Map of the resource groups to create"
-}
-
 variable "location" {
   description = "(Required) Define the region where the resource groups will be created"
 }
