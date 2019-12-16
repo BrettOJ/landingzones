@@ -1,5 +1,5 @@
 module "blueprint_virtual_network" {
-    source                             = "../../blueprints/blueprint_virtual_network"
+    source                             = "../blueprint_virtual_network"
     
     prefix                             = var.prefix
     location                           = var.location_map["region1"]
