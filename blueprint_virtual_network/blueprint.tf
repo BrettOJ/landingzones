@@ -21,7 +21,7 @@ module "networking_vnet" {
   virtual_network_rg                = local.HUB-CORE-NET
   prefix                            = var.prefix
   location                          = var.location
-  networking_object                 = var.main_vnet
+  networking_object                 = var.networking_object
   tags                              = local.tags
   diagnostics_map                   = var.diagnostics_map
   log_analytics_workspace           = var.log_analytics_workspace

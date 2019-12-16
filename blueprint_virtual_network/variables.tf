@@ -27,7 +27,7 @@ variable "diagnostics_map" {
   
 }
 
-variable "main_vnet" {
+variable "networking_object" {
   
 }
 variable "diagnostics_settings" {

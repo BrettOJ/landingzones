@@ -24,7 +24,7 @@ tags_hub = {
     DR              = "NON-DR-ENABLED"
 }
 
-main_vnet = {
+networking_object = {
         vnet = {
             name                = "sg1-vnet-dmz"
             address_space       = ["10.101.4.0/22"]     # 10.100.4.0 - 10.100.7.255

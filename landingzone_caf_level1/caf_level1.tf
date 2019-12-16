@@ -9,5 +9,5 @@ module "blueprint_virtual_network" {
     log_analytics_workspace            = var.log_analytics_workspace
     diagnostics_settings               = var.diagnostics_settings
     solution_plan_map                  = var.solution_plan_map
-    networking_object                  = var.main_vnet
+    networking_object                  = var.networking_object
 }
