@@ -28,7 +28,7 @@ module "networking_vnet" {
   diagnostics_settings              = var.diagnostics_settings
   
   }
-}
+
 
 
 
