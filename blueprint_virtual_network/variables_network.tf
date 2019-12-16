@@ -17,6 +17,9 @@ variable "location" {
 variable "tags" {
   description = "tags for the deployment"
 }
+variable "tags_hub" {
+  
+}
 
 variable "enable_network_watcher" {
   description = "Enable network watcher for the subnet - this will deploy and configure a Linux VM with network watcher extensions."
@@ -35,5 +38,8 @@ variable "main_vnet" {
   
 }
 variable "diagnostics_settings" {
+  
+}
+variable "solution_plan_map" {
   
 }

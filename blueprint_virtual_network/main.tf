@@ -21,3 +21,4 @@ locals {
   }
   tags                = merge(var.tags_hub,local.blueprint_tag)
 }
+

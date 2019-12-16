@@ -35,6 +35,9 @@ variable "main_vnet" {
 variable "diagnostics_settings" {
   
 }
+variable "solution_plan_map" {
+  
+}
 
 
 
