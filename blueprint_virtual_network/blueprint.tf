@@ -25,6 +25,11 @@ module "networking_vnet" {
   tags                              = local.tags
   diagnostics_map                   = var.diagnostics_map
   log_analytics_workspace           = var.log_analytics_workspace
+  diagnostics_settings              = var.diagnostics_settings
+  
+  }
 }
+
+
 
 
