@@ -1,3 +1,7 @@
+variable "resource_groups_hub" {
+  description = "(Required) Contains the resource groups object to be created for vdc_level1"
+}
+
 variable "prefix" {
   description = "(Optional) Prefix to uniquely identify the deployment"  
 }
@@ -27,4 +31,9 @@ variable "diagnostics_map" {
   
 }
 
-
+variable "main_vnet" {
+  
+}
+variable "diagnostics_settings" {
+  
+}

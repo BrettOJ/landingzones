@@ -5,7 +5,7 @@ module "resource_group" {
   version = "0.1.1"
 
   prefix          = var.prefix
-  resource_groups = var.resource_groups_shared_services
+  resource_groups = var.resource_groups_hub
   tags            = local.tags
 }
 

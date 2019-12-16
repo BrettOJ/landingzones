@@ -29,6 +29,13 @@ variable "log_analytics_workspace" {
 variable "diagnostics_map" {
   
 }
+variable "main_vnet" {
+  
+}
+variable "diagnostics_settings" {
+  
+}
+
 
 
 

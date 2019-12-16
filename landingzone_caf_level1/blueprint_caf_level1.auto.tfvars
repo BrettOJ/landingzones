@@ -1,7 +1,7 @@
 #Cloud Adoption Framework Landing Zone level 1
 
 # Set of resource groupds to land the blueprint
-resource_group_hub = {
+resource_groups_hub = {
     HUB-CORE-VNET    = {
         name = "-hub-core-vnet"
         location = "southeastasia"
@@ -72,3 +72,20 @@ solution_plan_map = {
     }
 }
 log_analytics_workspace = ""
+
+ diagnostics_map = {
+      diags_sa      = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/operations-rg/providers/Microsoft.Storage/storageAccounts/opslogs"
+      eh_id         = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/operations-rg/providers/Microsoft.EventHub/namespaces/opslogs"
+      eh_name       = "opslogs"
+  }
+
+  diagnostics_settings = {
+    log = [
+                # ["Category name",  "Diagnostics Enabled(true/false)", "Retention Enabled(true/false)", Retention_period] 
+                ["VMProtectionAlerts", true, true, 60],
+        ]
+    metric = [
+                #["Category name",  "Diagnostics Enabled(true/false)", "Retention Enabled(true/false)", Retention_period]                 
+                  ["AllMetrics", true, true, 60],
+    ]
+}
