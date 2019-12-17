@@ -21,7 +21,8 @@ data "terraform_remote_state" "landingzone_caf_foundations" {
 
 locals {
     prefix                  = data.terraform_remote_state.landingzone_caf_foundations.outputs.prefix
-    log_analytics_workspace = data.terraform_remote_state.landingzone_caf_foundations.outputs.blueprint_foundations.value.log_analytics_workspace
+    blueprint_foundations   = data.terraform_remote_state.landingzone_caf_foundations.outputs.blueprint_foundations
 }
 
+log_analytics_workspace     = local.blueprint_foundations.value.log_analytics_workspace
 
