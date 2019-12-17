@@ -1,7 +1,6 @@
 provider "azurerm" {
-  version = "<=1.35.0"
+  version = "<=1.37"
 }
-
 
 terraform {
     backend "azurerm" {
@@ -23,7 +22,7 @@ locals {
     prefix                  = data.terraform_remote_state.landingzone_caf_foundations.outputs.prefix
     blueprint_foundations   = data.terraform_remote_state.landingzone_caf_foundations.outputs.blueprint_foundations
     log_analytics_workspace = data.terraform_remote_state.landingzone_caf_foundations.outputs.log_analytics_workspace
-    #log_analytics_workspace = data.terraform_remote_state.landingzone_caf_foundations.outputs.log_analytics_workspace
+    
 }
 
 
