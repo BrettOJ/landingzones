@@ -22,10 +22,6 @@ variable "enable_network_watcher" {
   default = false
 }
 
-variable "log_analytics_workspace" {
-  
-}
-
 variable "diagnostics_map" {
   
 }
