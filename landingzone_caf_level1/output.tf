@@ -10,3 +10,7 @@ output "prefix" {
 output "tags" {
   value = var.tags_hub
 }
+output "log_analytics_workspace " {
+  sensitive   = true                      # to hide content from logs
+  value       = module.blueprint_virtual_network.log_analytics_workspace 
+}
